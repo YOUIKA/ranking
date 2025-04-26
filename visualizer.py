@@ -6,7 +6,7 @@ from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
 import matplotlib as mpl
-
+import os
 
 font_path = "./msyh.ttc"
 # 动态加载字体
