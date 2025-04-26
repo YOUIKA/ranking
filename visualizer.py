@@ -11,7 +11,7 @@ print(fonts)
 # for font in fonts:
 #     if 'WenQuanYi Micro Hei' in font or 'Symbola' in font:
 #         print(f"Found font: {font}")
-plt.rcParams['font.family'] = ["symbola",'WenQuanYi Micro Hei']
+plt.rcParams['font.family'] = ['WenQuanYi Micro Hei']
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问
 
 plt.style.use('ggplot')
