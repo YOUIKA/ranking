@@ -1,2 +1,2 @@
-fonts-Microsoft-YaHei
-fonts-Segoe-UI-Emoji
+fonts-wqy-microhei
+fonts-noto-cjk
