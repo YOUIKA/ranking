@@ -1,2 +1,0 @@
-fonts-SegoeUIEmoji
-fonts-MicrosoftYaHei
