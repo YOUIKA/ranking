@@ -4,16 +4,23 @@ import networkx as nx
 from matplotlib import patheffects as pe
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
-fonts = fm.findSystemFonts()
-for font in fonts:
-    if 'Microsoft YaHei' in font or 'Segoe UI Emoji' in font:
-        print(f"Found font: {font}")
-# 设置字体
-plt.rcParams['font.family'] = ['Microsoft YaHei', 'Segoe UI Emoji']
-# 重新加载字体配置
-plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+# fonts = fm.findSystemFonts()
+# for font in fonts:
+#     if 'Microsoft YaHei' in font or 'Segoe UI Emoji' in font:
+#         print(f"Found font: {font}")
+# # 设置字体
+# plt.rcParams['font.family'] = ['Microsoft YaHei', 'Segoe UI Emoji']
+# # 重新加载字体配置
+# plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 
-
+current_dir = os.path.dirname(os.path.abspath(__file__))
+font_path = os.path.join(current_dir, "msyh.ttc")
+# 动态加载字体
+if os.path.exists(font_path):
+    font_prop = FontProperties(fname=font_path)
+    mpl.rcParams['font.family'] = font_prop.get_name()
+else:
+    mpl.rcParams['font.family'] = 'sans-serif'  # 回退到默认字体
 
 
 
