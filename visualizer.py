@@ -5,16 +5,14 @@ from matplotlib import patheffects as pe
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
-import matplotlib as mpl
-import os
-
-# 获取当前路径并加载字体
-current_dir = os.path.dirname(os.path.abspath(__file__))
-font_path = os.path.join(current_dir, "msyh.ttc")
-custom_font = FontProperties(fname=font_path)
-
-# 设置全局字体
-plt.rcParams['font.family'] = custom_font.get_name()
+fonts = fm.findSystemFonts()
+for font in fonts:
+    if 'Microsoft YaHei' in font or 'Segoe UI Emoji' in font:
+        print(f"Found font: {font}")
+# 设置字体
+plt.rcParams['font.family'] = ['Microsoft YaHei', 'Segoe UI Emoji']
+# 重新加载字体配置
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 
 
 
