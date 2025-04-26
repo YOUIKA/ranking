@@ -104,7 +104,7 @@ def draw_ladder(players):
             (12.5, y_pos + 2), 1.2,
             facecolor='#FFFFFF80', edgecolor='white'
         ))
-        ax.text(12.8, y_pos + 2, "TOP1" if idx == 0 else "TOP"+str(idx+1),
+        ax.text(12.5, y_pos + 2, "TOP1" if idx == 0 else "TOP"+str(idx+1),
                 fontsize=24, ha='center', va='center')
 
         # 全局装饰
