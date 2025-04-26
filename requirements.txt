@@ -3,3 +3,4 @@ numpy>=2.0.2
 matplotlib>=3.9.4
 networkx>=3.2.1
 pandas>=2.2.3
+fonttools>=4.0.0
