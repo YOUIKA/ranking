@@ -17,7 +17,7 @@ import streamlit as st
 st.markdown("""
 <style>
     body {
-        font-family:  "Noto Color Emoji", "Segoe UI Emoji", sans-serif;
+        font-family:  "Noto Color Emoji", sans-serif;
     }
 </style>
 """, unsafe_allow_html=True)
