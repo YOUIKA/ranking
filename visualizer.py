@@ -5,6 +5,7 @@ from matplotlib import patheffects as pe
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
+import matplotlib as mpl
 import os
 # fonts = fm.findSystemFonts()
 # for font in fonts:
