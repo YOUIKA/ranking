@@ -8,9 +8,9 @@ from matplotlib.font_manager import FontProperties
 
 fonts = fm.findSystemFonts()
 for font in fonts:
-    if 'WenQuanYi Micro Hei' in font or 'Noto Color Emoji' in font:
+    if 'WenQuanYi Micro Hei' in font or 'Symbola' in font:
         print(f"Found font: {font}")
-plt.rcParams['font.family'] = ['WenQuanYi Micro Hei',"noto-color-emoji"]
+plt.rcParams['font.family'] = ['WenQuanYi Micro Hei',"Symbola"]
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问
 
 plt.style.use('ggplot')
