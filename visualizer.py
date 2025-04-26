@@ -6,12 +6,10 @@ from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
 
-fonts = fm.findSystemFonts()
-print(fonts)
 # for font in fonts:
 #     if 'WenQuanYi Micro Hei' in font or 'Symbola' in font:
 #         print(f"Found font: {font}")
-plt.rcParams['font.family'] = ['WenQuanYi Micro Hei']
+plt.rcParams['font.family'] = ['WenQuanYi Micro Hei',"Noto Sans CJK"]
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问
 
 plt.style.use('ggplot')
