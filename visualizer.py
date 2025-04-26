@@ -112,7 +112,7 @@ def draw_ladder(players):
                 fontsize=24, ha='center', va='center')
 
         # 全局装饰
-        ax.set_title('🏰🏰🏰🏰🏰🏰🏰🏰🏰荣耀天梯🏰🏰🏰🏰🏰🏰🏰🏰🏰',
+        ax.set_title('🏰🏰🏰🏰🏰🏰🏰🏰🏰荣耀天梯🏰🏰🏰🚀🚀🏰🏰🏰🏰🏰🏰',
                      fontsize=28, color='white', pad=20,
                       weight='bold')
         ax.set_xlim(0, 14)
