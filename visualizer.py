@@ -9,7 +9,7 @@ from matplotlib.font_manager import FontProperties
 # for font in fonts:
 #     if 'WenQuanYi Micro Hei' in font or 'Symbola' in font:
 #         print(f"Found font: {font}")
-plt.rcParams['font.family'] = ['WenQuanYi Micro Hei',"Noto Sans CJK"]
+plt.rcParams['font.family'] = ['WenQuanYi Micro Hei']
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问
 
 plt.style.use('ggplot')
@@ -78,11 +78,11 @@ def draw_ladder(players):
             sum1 = 1
         # 玩家数据
         info_text = (
-                f"🏆#{idx + 1} {row['Name']}\n"
-                f"⚔️{row['Wins']}胜 {row['Losses']}负 | "
+                f"#{idx + 1} {row['Name']}\n"
+                f"{row['Wins']}胜 {row['Losses']}负 | "
                 f"胜率 {row['Wins'] / (sum1):.0%}\n"
-                f"📈Rating: {row['Rating']}\n"
-                f"🔥{'连胜' if row['Streak'] > 0 else '连败'} {abs(row['Streak'])} "
+                f"Rating: {row['Rating']}\n"
+                f"{'连胜' if row['Streak'] > 0 else '连败'} {abs(row['Streak'])} "
                 + ("▲" * min(3, row['Streak']) if row['Streak'] > 0 else "▼" * min(3, abs(row['Streak'])))
         )
         ax.text(3, y_pos + 3.71, info_text,
@@ -104,11 +104,11 @@ def draw_ladder(players):
             (12.5, y_pos + 2), 1.2,
             facecolor='#FFFFFF80', edgecolor='white'
         ))
-        ax.text(12.8, y_pos + 2, "TOP1👑" if idx == 0 else "TOP"+str(idx+1)+"⚔️",
+        ax.text(12.8, y_pos + 2, "TOP1" if idx == 0 else "TOP"+str(idx+1),
                 fontsize=24, ha='center', va='center')
 
         # 全局装饰
-        ax.set_title('🏰🏰🏰🏰🏰🏰🏰🏰🏰荣耀天梯🏰🏰🏰🏰🏰🏰🏰🏰🏰',
+        ax.set_title('==============荣耀天梯==============',
                      fontsize=28, color='white', pad=20,
                       weight='bold')
         ax.set_xlim(0, 14)
