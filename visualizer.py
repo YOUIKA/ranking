@@ -7,10 +7,10 @@ import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
 fonts = fm.findSystemFonts()
 for font in fonts:
-    if 'Microsoft YaHei' in font or 'Segoe UI Emoji' in font:
+    if 'WenQuanYi Micro Hei' in font or 'Noto Sans CJK SC' in font:
         print(f"Found font: {font}")
 # 设置字体
-plt.rcParams['font.family'] = ['Microsoft YaHei', 'Segoe UI Emoji']
+plt.rcParams['font.family'] = ['WenQuanYi Micro Hei', 'Noto Sans CJK SC']
 # 重新加载字体配置
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 
