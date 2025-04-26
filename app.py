@@ -8,7 +8,7 @@ if 'system' not in st.session_state:
 st.markdown("""
 <style>
     body {
-        font-family: "Noto Sans CJK SC", "Segoe UI Emoji", sans-serif;
+        font-family: "WenQuanYi Micro Hei", "Noto Color Emoji", "Segoe UI Emoji", sans-serif;
     }
 </style>
 """, unsafe_allow_html=True)
