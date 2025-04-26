@@ -4,6 +4,7 @@ import networkx as nx
 from matplotlib import patheffects as pe
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
+import os
 # fonts = fm.findSystemFonts()
 # for font in fonts:
 #     if 'Microsoft YaHei' in font or 'Segoe UI Emoji' in font:
@@ -20,7 +21,7 @@ if os.path.exists(font_path):
     font_prop = FontProperties(fname=font_path)
     mpl.rcParams['font.family'] = font_prop.get_name()
 else:
-    mpl.rcParams['font.family'] = 'sans-serif'  # 回退到默认字体
+    mpl.rcParams['font.family'] = 'Symbola.ttf'  # 回退到默认字体
 
 
 
