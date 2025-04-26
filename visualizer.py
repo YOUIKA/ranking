@@ -5,6 +5,7 @@ from matplotlib import patheffects as pe
 from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
+import streamlit as st
 # fonts = fm.findSystemFonts()
 # for font in fonts:
 #     if 'WenQuanYi Micro Hei' in font or 'Noto Color Emoji' in font:
@@ -13,7 +14,13 @@ from matplotlib.font_manager import FontProperties
 # plt.rcParams['font.family'] = ['WenQuanYi Micro Hei']
 # plt.rcParams["font.sans-serif"] = ["WenQuanYi Micro Hei", "Noto Color Emoji"]
 # plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
-
+st.markdown("""
+<style>
+    body {
+        font-family:  "Noto Color Emoji", "Segoe UI Emoji", sans-serif;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 
 plt.style.use('ggplot')
