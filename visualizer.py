@@ -6,11 +6,9 @@ from matplotlib.colors import LinearSegmentedColormap
 import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
 import matplotlib as mpl
-import os
 
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-font_path = os.path.join(current_dir, "msyh.ttc")
+font_path = "./msyh.ttc"
 # 动态加载字体
 if os.path.exists(font_path):
     font_prop = FontProperties(fname=font_path)
