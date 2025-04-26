@@ -10,6 +10,8 @@ from matplotlib.font_manager import FontProperties
 #     if 'WenQuanYi Micro Hei' in font or 'Noto Color Emoji' in font:
 #         print(f"Found font: {font}")
 # 设置字体
+for font in fm.fontManager.ttflist:
+    print(font.name)
 plt.rcParams['font.family'] = ['WenQuanYi Micro Hei']
 plt.rcParams["font.sans-serif"] = ["WenQuanYi Micro Hei", "Noto Color Emoji"]
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
