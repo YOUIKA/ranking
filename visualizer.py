@@ -7,6 +7,7 @@ import matplotlib.font_manager as fm
 from matplotlib.font_manager import FontProperties
 
 fonts = fm.findSystemFonts()
+print(fonts)
 # for font in fonts:
 #     if 'WenQuanYi Micro Hei' in font or 'Symbola' in font:
 #         print(f"Found font: {font}")
