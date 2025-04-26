@@ -5,7 +5,13 @@ from visualizer import draw_ladder, draw_force_directed_graph
 # 初始化系统
 if 'system' not in st.session_state:
     st.session_state.system = RankingSystem()
-
+st.markdown("""
+<style>
+    body {
+        font-family: "Noto Sans CJK SC", "Segoe UI Emoji", sans-serif;
+    }
+</style>
+""", unsafe_allow_html=True)
 # 侧边栏 - 数据输入
 with st.sidebar:
     st.header("⚔️ 添加对战记录")
