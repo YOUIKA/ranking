@@ -85,7 +85,7 @@ def draw_ladder(players):
                 f"{'连胜' if row['Streak'] > 0 else '连败'} {abs(row['Streak'])} "
                 + ("▲" * min(3, row['Streak']) if row['Streak'] > 0 else "▼" * min(3, abs(row['Streak'])))
         )
-        ax.text(3, y_pos + 3.71, info_text,
+        ax.text(3, y_pos + 3.51, info_text,
             fontsize=15, color='white', va='top',
             path_effects=[pe.withStroke(linewidth=2, foreground="black")]
         )
