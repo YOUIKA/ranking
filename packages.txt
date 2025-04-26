@@ -1,2 +1,2 @@
 fonts-wqy-microhei
-fonts-noto-cjk
+fonts-noto-color-emoji
